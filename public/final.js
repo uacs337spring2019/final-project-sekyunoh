@@ -81,34 +81,41 @@ data from the server.
 	**/
 	function displayList(people){
 		document.getElementById('list').innerHTML = '';
-		let i;
-		for(i = 0; i < people.length; i++){
-			let person = people[i];
-			let div = document.createElement('div');
-			div.className = person['url'];
-			div.onclick = modal;
-			div.id = i.toString();
-			let img = document.createElement('img');
-			let infoDiv = document.createElement('div');
-			let h3 = document.createElement('h3');
-			let p = document.createElement('p');
+		if(people.length >= 1){
+			let i;
+			for(i = 0; i < people.length; i++){
+				let person = people[i];
+				let div = document.createElement('div');
+				div.className = person['url'];
+				div.onclick = modal;
+				div.id = i.toString();
+				let img = document.createElement('img');
+				let infoDiv = document.createElement('div');
+				let h3 = document.createElement('h3');
+				let p = document.createElement('p');
 
-			let image = '/image/'+person['pic'].replace(/^\s+|\s+$/g,'');
-			let fullname = person['name'].split(' ');
-			let name = fullname[0] + ' ' + fullname[1];
-			let addr = person['address'].replace(/^\s+|\s+$/g,'');
+				let image = '/image/'+person['pic'].replace(/^\s+|\s+$/g,'');
+				let fullname = person['name'].split(' ');
+				let name = fullname[0] + ' ' + fullname[1];
+				let addr = person['address'].replace(/^\s+|\s+$/g,'');
 
-			img.src = image;
-			img.alt = person['pic'].replace(/^\s+|\s+$/g,'');
-			h3.innerHTML = name;
-			p.innerHTML = addr;
-			infoDiv.appendChild(h3);
-			infoDiv.appendChild(p);
+				img.src = image;
+				img.alt = person['pic'].replace(/^\s+|\s+$/g,'');
+				h3.innerHTML = name;
+				p.innerHTML = addr;
+				infoDiv.appendChild(h3);
+				infoDiv.appendChild(p);
 
-			div.appendChild(img);
-			div.appendChild(infoDiv);
+				div.appendChild(img);
+				div.appendChild(infoDiv);
 
-			document.getElementById('list').appendChild(div);
+				document.getElementById('list').appendChild(div);
+			}
+		}else{
+			let h1 = document.createElement('h1');
+			h1.innerHTML = "No result found";
+			h1.className = 'error';
+			document.getElementById('list').appendChild(h1);
 		}
 	}
 
