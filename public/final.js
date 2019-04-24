@@ -40,7 +40,7 @@ data from the server.
 
 	function userTyping(event){
 		let value = document.getElementById('input').value;
-		let url = 'https://final-project-sekyunoh.herokuapp.com?name='+value;
+		let url = 'https://final-project-sekyunoh.herokuapp.com/get-user?name='+value;
 
 		// fetch voterUrl
 		fetch(url)
