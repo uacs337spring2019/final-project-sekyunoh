@@ -75,4 +75,4 @@ app.get('/description', function(req,res){
 })
 
 // listen connection on 3000 PORT
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT);
