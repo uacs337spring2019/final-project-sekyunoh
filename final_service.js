@@ -22,7 +22,8 @@ app.use(function(req, res, next) {
                "Origin, X-Requested-With, Content-Type, Accept");
 	next();
 });
-app.use('/public', express.static('public'));
+
+app.use(express.static('public'));
 app.set('views', __dirname + '/public');
 app.engine('html', require('ejs').renderFile);
 
