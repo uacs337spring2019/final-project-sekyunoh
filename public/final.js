@@ -70,7 +70,7 @@ data from the server.
 			let h3 = document.createElement('h3');
 			let p = document.createElement('p');
 
-			let image = '/public/image/'+person['pic'].replace(/^\s+|\s+$/g,'');
+			let image = '/image/'+person['pic'].replace(/^\s+|\s+$/g,'');
 			let fullname = person['name'].split(' ');
 			let name = fullname[0] + ' ' + fullname[1];
 			let addr = person['address'].replace(/^\s+|\s+$/g,'');
