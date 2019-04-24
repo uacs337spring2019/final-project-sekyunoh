@@ -24,7 +24,7 @@ data from the server.
 
 	function getList(){
 		// call ajax
-		let url = 'https://final-project-sekyunoh.herokuapp.com/';
+		let url = 'https://final-project-sekyunoh.herokuapp.com';
 		fetch(url)
 		.then(checkStatus)
 		.then(function(responseText) {
