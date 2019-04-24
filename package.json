@@ -2,7 +2,7 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "",
-  "main": "final.js",
+  "main": "final_service.js",
   "dependencies": {
     "express": "^4.16.4"
   },
