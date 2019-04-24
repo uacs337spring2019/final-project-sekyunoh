@@ -2,6 +2,10 @@
   "name": "final-project",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
   "main": "final_service.js",
   "dependencies": {
     "express": "^4.16.4"

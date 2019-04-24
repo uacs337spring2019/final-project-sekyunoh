@@ -3,7 +3,7 @@ Sekyun Oh
 CSC 337
 Final Project
 04/24/2019
-chatit.js
+final.js
 
 This is a JavaScript code for the final web page's behavior.
 This JavaScript code interacts with final_service.js to get
