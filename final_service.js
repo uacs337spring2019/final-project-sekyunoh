@@ -10,11 +10,10 @@ This JavaScript code interacts with final.js to send
 data to HTML.
 */
 
+'use strict';
 const express = require("express");
 const app = express();
-var fs = require('fs');
-const bodyParser = require('body-parser');
-const jsonParser = bodyParser.json();
+const fs = require('fs');
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -35,7 +34,7 @@ app.get('/', function(req, res){
 app.get('/get-user',function(req,res){
 	res.header("Access-Control-Allow-Origin", "*");
 
-	var value = req.query.name;
+	let value = req.query.name;
 	let arr = [];
 	let people = fs.readFileSync(__dirname+'/info.txt', 'utf8').split('\n');
 
@@ -75,11 +74,11 @@ app.get('/get-user',function(req,res){
 app.get('/description', function(req,res){
 	res.header("Access-Control-Allow-Origin", "*");
 
-	var value = req.query.id;
+	let value = req.query.id;
 	let people = fs.readFileSync(__dirname+'/des.txt', 'utf8').split('\n\n');
 	let object = {'desc':people[value]};
 	res.send(JSON.stringify(object));
-})
+});
 
 // listen connection on 3000 PORT
 app.listen(process.env.PORT);

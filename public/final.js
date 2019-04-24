@@ -10,8 +10,9 @@ This JavaScript code interacts with final_service.js to get
 data from the server.
 */
 
-'use strict';
+
 (function(){
+	'use strict';
 	/**
 	window.onload = function()
 
@@ -22,6 +23,12 @@ data from the server.
 		document.getElementById('input').onkeyup = userTyping;
 	};
 
+	/**
+	getList()
+
+	This function gets called when the page is beign loaded.
+	This function calls the server to get the data for people.
+	**/
 	function getList(){
 		// call ajax
 		let url = 'https://final-project-sekyunoh.herokuapp.com/get-user';
@@ -30,7 +37,7 @@ data from the server.
 		.then(function(responseText) {
 			let res = JSON.parse(responseText);
 			let people = res['people'];
-			displayList(people)
+			displayList(people);
 		})
 		.catch(function(error) {
 			// show error
@@ -38,11 +45,18 @@ data from the server.
 		});
 	}
 
-	function userTyping(event){
+	/**
+	userTyping()
+
+	This function gets called when user typing.
+	This is main function that completes auto-complete function.
+	This calls server to get the data and show to the front.
+	**/
+	function userTyping(){
 		let value = document.getElementById('input').value;
 		let url = 'https://final-project-sekyunoh.herokuapp.com/get-user?name='+value;
 
-		// fetch voterUrl
+		// fetch url
 		fetch(url)
 		.then(checkStatus)
 		.then(function(responseText) {
@@ -56,6 +70,15 @@ data from the server.
 		});
 	}
 
+	/**
+	@param {object} people
+
+	displayList(people)
+
+	This function get called when the getting people's data succeeds.
+	This function is a main function that displays the list of people
+	into the front.
+	**/
 	function displayList(people){
 		document.getElementById('list').innerHTML = '';
 		let i;
@@ -89,6 +112,15 @@ data from the server.
 		}
 	}
 
+	/**
+	@param {error} error
+
+	displayError(error)
+
+	This function gets called when fetching url fails.
+	This removes every dom in list-container div and
+	shows error instead.
+	**/
 	function displayError(error){
 		document.getElementById('list').innerHTML = '';
 		let h1 = document.createElement('h1');
@@ -97,6 +129,12 @@ data from the server.
 		document.getElementById('list').appendChild(h1);
 	}
 
+	/**
+	modal()
+
+	This function gets called when user clicks a person in a list.
+	This pops up and shows the person's detail.
+	**/
 	function modal(){
 
 		document.getElementById('modal-pic').src = this.children[0].getAttribute('src');
@@ -108,7 +146,8 @@ data from the server.
 		a.target = '_blank';
 		document.getElementById('modal-name').appendChild(a);
 
-		let url = 'https://final-project-sekyunoh.herokuapp.com/description?id='+this.getAttribute('id');
+		let url = 'https://final-project-sekyunoh.herokuapp.com/description?id='
+		+this.getAttribute('id');
 		// fetch url
 		fetch(url)
 		.then(checkStatus)
@@ -127,15 +166,17 @@ data from the server.
 
 		document.getElementsByClassName("close")[0].onclick = function() {
 			modal.style.display = "none";
-		}
+		};
 	}
 
 	/**
+	@param {JSON} response
 	checkStatus(response)
 
 	This function is called when Ajax fetchs url.
 	This function simply determines if the Ajax call was successful or not.
 	This is a main function that we can handle errors.
+	@returns {JSON} JSON or Error
 	**/
 	function checkStatus(response) {
 
