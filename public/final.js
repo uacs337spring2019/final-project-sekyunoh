@@ -144,8 +144,13 @@ data from the server.
 	**/
 	function modal(){
 
-		document.getElementById('modal-pic').src = this.children[0].getAttribute('src');
-		document.getElementById('modal-pic').alt = this.children[0].getAttribute('alt');
+		document.getElementsByClassName("modal-pic-container")[0].innerHTML = '';
+		let img = document.createElement('img');
+		img.id = 'modal-pic';
+		img.src = this.children[0].getAttribute('src');
+		img.alt = this.children[0].getAttribute('alt');
+		document.getElementsByClassName("modal-pic-container")[0].appendChild(img);
+
 		document.getElementById('modal-name').innerHTML = '';
 		let a = document.createElement('a');
 		a.innerHTML = this.children[1].children[0].innerHTML;
