@@ -1,0 +1,30 @@
+Mr.Rocket Man, 944 E University Blvd, Jong-un.jpg, https://en.wikipedia.org/wiki/Kim_Jong-un
+Vladimir Putin, 810 E University Blvd, Vladimir.jpg, https://en.wikipedia.org/wiki/Vladimir_Putin
+Donald Trump, 266 Congress Street, Donald.jpg, https://en.wikipedia.org/wiki/Donald_Trump
+Bradley Cooper, 943 E University Blvd, Bradley.jpg, https://en.wikipedia.org/wiki/Bradley_Cooper
+Bruce Willis, 151 N Stone Ave, Bruce.jpg, https://en.wikipedia.org/wiki/Bruce_Willis
+Henry Golding, 201 N Court Ave, Henry.jpg, https://en.wikipedia.org/wiki/Henry_Golding
+Keanu Reeves, 400 N Toole Ave A, Keanu.jpg, https://en.wikipedia.org/wiki/Keanu_Reeves
+Leonardo DiCaprio, 101 E Pennington St, Leonardo.jpg, https://en.wikipedia.org/wiki/Leonardo_DiCaprio
+Benedict Cumberbatch, 870 E University Blvd, Benedict.jpg, https://en.wikipedia.org/wiki/Benedict_Cumberbatch
+Dwayne Johnson, 982 E University Blvd, Dwayne.jpg, https://en.wikipedia.org/wiki/Dwayne_Johnson
+George Clooney, 350 E Congress St, George.jpg, https://en.wikipedia.org/wiki/George_Clooney
+Tom Cruise, 756 S Stone Ave, Tom.jpg, https://en.wikipedia.org/wiki/Tom_Cruise
+Will Smith, 621 N 4th Ave, Will.jpg, https://en.wikipedia.org/wiki/Will_Smith
+Floyd Mayweather, 500 N 4th Ave, Floyd.jpg, https://en.wikipedia.org/wiki/Floyd_Mayweather_Jr.
+Conor McGregor, 865 E University Blvd, Conor.jpg, https://en.wikipedia.org/wiki/Conor_McGregor
+Emma Stone, 533 N 4th Ave, Emma.jpg, https://en.wikipedia.org/wiki/Emma_Stone
+Jennifer Lawrence, 1072 N Campbell Ave, Lawrence.jpg, https://en.wikipedia.org/wiki/Jennifer_Lawrence
+Chloe Moretz, 943 E University Blvd, Chloe.jpg, https://en.wikipedia.org/wiki/Chlo%C3%AB_Grace_Moretz
+Scarlett Johansson, 1710 E Speedway Blvd, Scarlett.jpg, https://en.wikipedia.org/wiki/Scarlett_Johansson
+Amanda Seyfried, 311 E Congress St, Amanda.jpg, https://en.wikipedia.org/wiki/Amanda_Seyfried
+Jessica Alba, 402 E 9th St, Jessica.jpg, https://en.wikipedia.org/wiki/Jessica_Alba
+Angelina Jolie, 3301 E Grant Rd, Angelina.jpg, https://en.wikipedia.org/wiki/Angelina_Jolie
+Kristen Stewart, 2543 E Grant Rd, Kristen.jpg, https://en.wikipedia.org/wiki/Kristen_Stewart
+Emma Watson, 135 S 6th Ave, Watson.jpg, https://en.wikipedia.org/wiki/Emma_Watson
+Natalie Portman, 47 N 6th Ave, Natalie.jpg, https://en.wikipedia.org/wiki/Natalie_Portman
+Julia Roberts, 100 S Avenida del Convento #150, Julia.jpg, https://en.wikipedia.org/wiki/Julia_Roberts
+Jennifer Aniston, 2005 E Broadway Blvd, Jennifer.jpg, https://en.wikipedia.org/wiki/Jennifer_Aniston
+Mila Kunis, 54 W Congress St, Mila.jpg, https://en.wikipedia.org/wiki/Mila_Kunis
+Kim Kardashian, 3242 E Speedway Blvd, Kim.jpg, https://en.wikipedia.org/wiki/Kim_Kardashian
+Cameron Diaz, 354 S Main Ave, Cameron.jpg, https://en.wikipedia.org/wiki/Cameron_Diaz

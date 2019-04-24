@@ -1,0 +1,7 @@
+{
+"name": "Sekyun Oh CSC337 Final Project",
+"description": "A auto-complete web application based on user input using Node.js and Express 4",
+"repository": "https://github.com/uacs337spring2019/final-project-sekyunoh.git",
+"logo": "https://rawgit.com/heroku/node-js-sample/master/public/node.svg",
+"keywords": ["node", "express", "static"]
+}
