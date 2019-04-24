@@ -24,7 +24,7 @@ data from the server.
 
 	function getList(){
 		// call ajax
-		let url = 'http://localhost:3000/';
+		let url = 'https://final-project-sekyunoh.herokuapp.com/';
 		fetch(url)
 		.then(checkStatus)
 		.then(function(responseText) {
@@ -40,7 +40,7 @@ data from the server.
 
 	function userTyping(event){
 		let value = document.getElementById('input').value;
-		let url = 'http://localhost:3000?name='+value;
+		let url = 'https://final-project-sekyunoh.herokuapp.com?name='+value;
 
 		// fetch voterUrl
 		fetch(url)
@@ -106,7 +106,7 @@ data from the server.
 		a.target = '_blank';
 		document.getElementById('modal-name').appendChild(a);
 
-		let url = 'http://localhost:3000/description?id='+this.getAttribute('id');
+		let url = 'https://final-project-sekyunoh.herokuapp.com/description?id='+this.getAttribute('id');
 		// fetch url
 		fetch(url)
 		.then(checkStatus)
