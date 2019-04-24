@@ -24,7 +24,6 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static('public'));
-app.set('views', __dirname + '/public');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', function(req, res){
