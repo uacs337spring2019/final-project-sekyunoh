@@ -24,9 +24,14 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static('public'));
+app.engine('html', require('ejs').renderFile);
+
+app.get('/', function(req, res){
+	res.render('final.html');
+});
 
 // main get comment function
-app.get('/',function(req,res){
+app.get('/get-user',function(req,res){
 	res.header("Access-Control-Allow-Origin", "*");
 
 	var value = req.query.name;

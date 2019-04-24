@@ -24,7 +24,7 @@ data from the server.
 
 	function getList(){
 		// call ajax
-		let url = 'https://final-project-sekyunoh.herokuapp.com/';
+		let url = 'https://final-project-sekyunoh.herokuapp.com/get-user';
 		fetch(url)
 		.then(checkStatus)
 		.then(function(responseText) {
@@ -70,7 +70,7 @@ data from the server.
 			let h3 = document.createElement('h3');
 			let p = document.createElement('p');
 
-			let image = '../image/'+person['pic'].replace(/^\s+|\s+$/g,'');
+			let image = '/image/'+person['pic'].replace(/^\s+|\s+$/g,'');
 			let fullname = person['name'].split(' ');
 			let name = fullname[0] + ' ' + fullname[1];
 			let addr = person['address'].replace(/^\s+|\s+$/g,'');
