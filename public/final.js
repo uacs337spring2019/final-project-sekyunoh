@@ -76,6 +76,7 @@ data from the server.
 			let addr = person['address'].replace(/^\s+|\s+$/g,'');
 
 			img.src = image;
+			img.alt = person['pic'].replace(/^\s+|\s+$/g,'');
 			h3.innerHTML = name;
 			p.innerHTML = addr;
 			infoDiv.appendChild(h3);
@@ -99,6 +100,7 @@ data from the server.
 	function modal(){
 
 		document.getElementById('modal-pic').src = this.children[0].getAttribute('src');
+		document.getElementById('modal-pic').alt = this.children[0].getAttribute('alt');
 		document.getElementById('modal-name').innerHTML = '';
 		let a = document.createElement('a');
 		a.innerHTML = this.children[1].children[0].innerHTML;
